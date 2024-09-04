@@ -8,11 +8,12 @@ const Room = require("./classes/room");
 app.use(express.static(path.join(__dirname,'public')));
 
 const expressServer=app.listen(3000);
-const io=SocketIo(expressServer);
+const io=SocketIo(expressServer,{
+    cors:{
+        origin:"https://nearby-krill-night-coders-8d05e488.koyeb.app/"
+    }
+});
 
-app.get('/',(req,res)=>{
-    
-})
 
 
 app.get('/change-ns',(req,res)=>{

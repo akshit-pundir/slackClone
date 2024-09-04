@@ -13,7 +13,8 @@ const clientOptions={
 
 
 // always join the main nameSpace that's where the clinet get the othere namespaces  from
-const socket=io("http://localhost:3000",clientOptions);
+// const socket=io("http://localhost:3000",clientOptions);
+const socket=io("https://nearby-krill-night-coders-8d05e488.koyeb.app/",clientOptions);
 
 
 
