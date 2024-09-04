@@ -10,6 +10,11 @@ app.use(express.static(path.join(__dirname,'public')));
 const expressServer=app.listen(3000);
 const io=SocketIo(expressServer);
 
+app.get('/',(req,res)=>{
+    
+})
+
+
 app.get('/change-ns',(req,res)=>{
 
     namespaces[0].addRoom(new Room(0,'hackers Chat',0));
