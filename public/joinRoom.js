@@ -8,7 +8,7 @@ const joinRoom=async(roomTitle,namespaceId)=>{
     document.querySelector('.curr-room-num-users').innerHTML=`${ackRes.numUsers} <span class="fa-solid fa-user"></span>`
     document.querySelector('.curr-room-text').innerHTML=roomTitle;
     
-    // we get room chat history here
+
 
     document.querySelector('#messages').innerHTML="";
 
