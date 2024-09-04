@@ -77,11 +77,6 @@ namespaces.forEach(namespace =>{
             const sockets=await io.of(namespace.endpoint).in(roomObj.roomTitle).fetchSockets();
             const SocketCount=sockets.length;
                
-            if (SocketCount === 0) {
-                const thisRoom = thisNs.rooms.find(room => room.roomTitle === roomObj.roomTitle);
-                thisRoom.clearHistory();
-            }
-
             
             ackCallback({
                 numUsers:SocketCount,
