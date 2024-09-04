@@ -94,7 +94,7 @@ socket.on('nsList',(nsData)=>{
         //join the namespaces as one by one by looping over each namespace 
 
         if(!NameSpaceSocket[ns.id]){
-            thisNs=io(`http://localhost:3000${ns.endpoint}`);
+            thisNs=io(`https://nearby-krill-night-coders-8d05e488.koyeb.app${ns.endpoint}`);
         }
 
         

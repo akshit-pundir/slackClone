@@ -16,13 +16,12 @@ const expressServer=app.listen(3000);
 
 const io = SocketIo(expressServer, {
     cors: {
-      origin: ["*", "https://nearby-krill-night-coders-8d05e488.koyeb.app"],
-      methods: ["GET", "POST"],
+      origin: "*",
+    //   methods: ["GET", "POST"],
       credentials: true
     }
   });
   
-
 
 app.get('/change-ns',(req,res)=>{
 
